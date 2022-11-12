@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/homeMenu"
+        android:title="@string/homeMenu"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:iconTint="@color/white"
+        />
+
+    <item
+        android:id = "@+id/progressMenu"
+        android:title="@string/progressMenu"
+        android:icon="@drawable/ic_bar_chart_black_24dp_1_"
+        />
+
+
+    <!--<item
+        android:id ="@+id/notesMenu"
+        android:title="@string/notesMenu"
+        android:icon ="@drawable/ic_quick_note"
+        />-->
+
+    <item
+        android:id =  "@+id/searchMenu"
+        android:title="@string/search_menu"
+        android:icon="@drawable/ic_search_fill0_wght400_grad0_opsz48"
+
+        />
+
+    <item
+        android:id ="@+id/bookmarkMenu"
+        android:title="@string/bookmarkBtn"
+        android:icon="@drawable/ic_bookmarks_fill0_wght400_grad0_opsz48"
+        />
+    <item
+        android:id = "@+id/notesMenu"
+        android:title="@string/notesMenu"
+        android:icon="@drawable/ic_description_fill0_wght400_grad0_opsz48"
+        />
+
+
+
+</menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aheiv_allBtn">View All</string>
+    <string name="app_name">CustomProject</string>
+    <string name="bookmarkBtn">Bookmarks</string>
+    <string name="bookmark_title">Bookmark</string>
+    <string name="cancelBtn"> Cancel</string>
+    <string name="copy_verse">Copy</string>
+    <string name="homeMenu">Home</string>
+    <string name="jump_to_verse">Note</string>
+    <string name="noteDesc">Enter Note Here</string>
+    <string name="noteTitle"> Title</string>
+    <string name="notesMenu">Notes</string>
+    <string name="notes_title">Notes</string>
+    <string name="pActiveDays">Active Days</string>
+    <string name="pChaptersRead">Chapters Read</string>
+    <string name="pProgress">Progress</string>
+    <string name="pTimeSpent">Time Spent</string>
+    <string name="pVersesRead">Verses Read</string>
+    <string name="pauseTime">Pause</string>
+    <string name="progressMenu">Progress</string>
+    <string name="progress_amount">Progress Amount</string>
+    <string name="progress_time">Progress Time</string>
+    <string name="quickNote">Quick Note</string>
+    <string name="read_100A">Collect this achevement after reading 100 pages</string>
+    <string name="read_1500A">Collect this acheivement after reading 1500 verses</string>
+    <string name="read_all">Collect this acheivement after reading all the quran.</string>
+    <string name="saveBtn"> Save</string>
+    <string name="search_menu">Search</string>
+    <string name="settingsMenu">Settings</string>
+    <string name="shared_pref_achiv">achievement_sharedPref</string>
+    <string name="startTime">Start</string>
+    <string name="titleError"> Title can not be empty</string>
+    <string name="title_achiev">Achievement</string>
+    <string name="videosMenu">Lessons</string>
+</resources>

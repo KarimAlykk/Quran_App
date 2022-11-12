@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_color"
+    tools:context=".NotingActivity">
+
+
+    <!--<LinearLayout
+        android:id="@+id/llVerse"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvVerseNoting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:lineSpacingExtra="10sp"
+            android:scrollbars="vertical"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>-->
+
+
+    <android.widget.Button
+        android:id="@+id/btnViewVerse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/noting_background"
+        android:text="View verse"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/rgColors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_slc_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/slct_colot"
+        android:textColor="?text_color"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/rgColors"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/rgColors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/tlNoteTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_slc_color">
+
+        <RadioButton
+            android:id="@+id/rbRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_color_selecter_red"
+            android:button="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/rbGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/radio_color_selector_brown"
+            android:button="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/rbGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/radio_color_selector_green"
+            android:button="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/rbDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_color_selector_default"
+            android:button="@android:color/transparent" />
+
+
+    </RadioGroup>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/noteTitle"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toTopOf="@id/etNoteDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/noting_background"
+        app:layout_constraintTop_toBottomOf="@id/rgColors">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/noting_background"
+            android:textColor="?attr/text_color"
+            android:textSize="20sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <EditText
+        android:id="@+id/etNoteDesc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:hint="@string/noteDesc"
+        android:background="@drawable/noting_background"
+        android:textColor="?attr/text_color"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/saveNoteBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlNoteTitle"
+        />
+
+
+    <ImageButton
+        android:elevation="@dimen/cardview_default_radius"
+        android:id="@+id/saveNoteBtn"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/noting_background"
+        android:src="@drawable/done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cancelNoteBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNoteDesc" />
+    <!--android:text="@string/saveBtn"-->
+
+
+    <ImageButton
+        android:id="@+id/cancelNoteBtn"
+        android:layout_width="0dp"
+        android:elevation="@dimen/cardview_default_radius"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/noting_background"
+        android:src="@drawable/close"
+        app:layout_constraintBottom_toBottomOf="@+id/saveNoteBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/saveNoteBtn" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

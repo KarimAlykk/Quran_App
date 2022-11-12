@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotesFragment">
+
+
+    <RadioGroup
+        android:id="@+id/rgColorFilters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/rvNoteItems"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbRedFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+
+            android:background="@drawable/radio_color_selecter_red"
+            android:button="@android:color/transparent"
+            android:text="@string/red"
+            android:textAlignment="center"
+            android:textColor="?attr/text_color" />
+
+        <RadioButton
+            android:id="@+id/rbBrownFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/radio_color_selector_brown"
+            android:button="@android:color/transparent"
+            android:text="@string/brown"
+            android:textAlignment="center"
+            android:textColor="?attr/text_color" />
+
+        <RadioButton
+            android:id="@+id/rbGreenFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/radio_color_selector_green"
+            android:button="@android:color/transparent"
+            android:text="@string/green"
+            android:textAlignment="center"
+            android:textColor="?attr/text_color" />
+
+        <RadioButton
+            android:id="@+id/rbDefaultFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/radio_color_selector_default"
+            android:button="@android:color/transparent"
+            android:text="@string/default_color"
+            android:textAlignment="center"
+            android:textColor="?attr/text_color" />
+
+        <RadioButton
+            android:id="@+id/rbAllFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/radio_all_selector_color"
+            android:button="@android:color/transparent"
+            android:text="@string/all"
+            android:textAlignment="center"
+            android:textColor="?attr/text_color" />
+
+
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNoteItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:splitMotionEvents="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgColorFilters" />
+
+    <TextView
+        android:id="@+id/tvEmptyNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/no_notes"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
